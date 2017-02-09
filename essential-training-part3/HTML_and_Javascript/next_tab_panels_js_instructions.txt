@@ -1,0 +1,87 @@
+It's time for us to finish the basic functionality of our tab panels by responding 
+to the event listener. Now, we're going to do that by finishing up our display 
+panel function. So I've opened up the next .HTM that's on the 806 folder. And you 
+can see this one is a little further along. The display panel function's got some 
+things built into it, and I want to talk about what those are before we finish 
+this up. The first thing is you'll notice that inside the parentheses now, 
+there is this Tab to Activate. What is that? Well, we made that up. 
+Basically, whenever the function is being called, an object is being passed into 
+it. That object that's being passed into it is the tab that's been clicked. So 
+essentially, we're saying to ourselves tab to activate.
+
+So we can call that whatever we, we want to. We could have named it Fred for 
+example. But tab to activate is a lot more descriptive. After that we have 
+another for loop. So you remember earlier from what these for loops are doing, 
+right? So what we're doing is every time this display panel has been called, 
+so every time a panel's clicked on, we want it to go through all the tabs and 
+all the panels. That way we can turn off the anels that aren't supposed to be 
+visible, and then we can turn the one that is supposed to be visible on. We can 
+also make sure that the proper tab up top is activated and styled as well. So 
+we're doing a for loop going through all of our tabLinks and, basically, we're 
+just sort of looping through them.
+
+So now, the next thing we have, this is what we called conditional logic. 
+Conditional logic helps us to make applications that can make decisions. In 
+this case, we're doing an if else statement. If else is pretty easy to grasp 
+because these are things that you do every single day. Let's say for example 
+you walk up to an elevator and you press the button. If door opens, you go into 
+the elevator. Else, let's say the elevator's broken, you take the stairs. So we 
+do if else statements all day long on our own. So in this case, we're saying if 
+tab lengths i, remember, i is this variable, and so each time it loops through, 
+that's going to go to 0, 1, and 2, which are all three of our tabs.
+
+And this is not an assignment operator. Earlier equals assigns value so double 
+equals checks for quality. So it is saying if a tab is equal to the table to 
+activate, whose tab to activate? The one that got clicked on. So we're saying 
+hey compare the one that got clicked on to all of the tabs. If they match I 
+want you to do this. So, what we're going to do, again, I'm going to paste 
+some code in here. And then, I'm going to have you pause the video, type it in, 
+then we'll talk about it. Okay, now again, be very careful about where you 
+place this.
+
+You want to place this in the if statement's opening and closing curly braces. 
+So, they should go right there. So, the first comment tells you kind of what 
+this is doing. If it's the one to activate, change its class. So what we're 
+saying is, for the tab that matches, go in and add to its class active. Just 
+to give you an idea of what's happening here, if I go back up to my tabs, what 
+that function is going to do is for the active tab, it's going to give it a 
+class of active. In my CSS, I have styles that control the way that that looks 
+and behaves. So in this case, the HTML, the CSS, and JavaScript are all 
+functioning together. I scroll down, then I can see that also I have tab 
+panels. I'm going through the tab panels and I'm saying whichever tab panels 
+matched. And that could be one two or three. Change its display to block. So 
+right now there are two types of display properties that we're going to set. 
+That would either be block or none. A display of none is going to hide it. A 
+display of block is going to show it. So that display property right here is 
+actually CSS. So we're using JavaScript to write CSS directly on the element. 
+We could've done this through the use of our CSS styles. But I didn't want to 
+hide any by default. So I had them all display, and now I'm setting it to 
+either block or none, based upon whether it's active or not. So if it's active 
+it displays. If it's not active it's going to not display. And that, of course, 
+leads us to our else statement. So now we know what happens if they match. If 
+they match, the tab gets a class of active and the panel gets a display 
+property of block. If it doesn't match, which will be true for the rest of 
+them, we want to do this.
+
+So go ahead and pause your video, type this in and then we'll talk about it. 
+And again make sure that this is all typed in inside the closing curly brace 
+for else. So now what we're doing is we're going ahead ahead and removing any 
+class of active if one exists. So we initially apply the class of active to the 
+first tab. And then thereafter, it's applied to any tab that's clicked on. 
+Let's say the first tab has a class of active and somebody clicks on tab number 
+3. Well, first we need to remove that class from the first one and apply it to 
+the third one.
+
+And that's what this is doing. And then the next thing we need to do is Hide 
+any of the other panels, and that we’re doing with this Style Display equal to 
+None. So again, that’s CSS. So essentially we’re assigning Active to the 
+current tab and we’re displaying the panel as Block. All the rest of them 
+we’re stripping off any active classes and we’re setting the Displayed to None. 
+And that’s all we’re doing here. All right, if I Save this, preview this in my 
+browser. If I scroll down, now I should have active tab panels.
+
+Cool. So now we have a fully functioning set of tab panels. Now this is an 
+extremely simple example and it really wouldn't meet all the needs of a 
+production-level set of tabs, but it should give you a pretty good idea of how 
+JavaScript works. Before we move on, I want to talk about externalizing 
+JavaScript, and we'll do that in our next exercise. 
